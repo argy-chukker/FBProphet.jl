@@ -1,1 +1,0 @@
-expected_future_tail_ds = [DateTime("2017-01-15"), DateTime("2017-01-16"), DateTime("2017-01-17"), DateTime("2017-01-18"), DateTime("2017-01-19")]
