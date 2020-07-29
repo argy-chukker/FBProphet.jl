@@ -1,13 +1,10 @@
-#using FBProphet
-include("../src/FBProphet.jl")
-
+using FBProphet
 using Pandas
 using Test
-using Dates
 
 include("data/quickstart_fixtures.jl")
 
-df = Pandas.read_csv("./data/example_wp_log_peyton_manning.csv")
+df = Pandas.read_csv("./test/data/example_wp_log_peyton_manning.csv")
 m = FBProphet.Prophet()
 
 FBProphet.fit(m, df)

@@ -1,3 +1,5 @@
+using Dates
+
 expected_future_df_tail = Pandas.DataFrame(Dict(:ds => [DateTime("2017-01-15"),
                                                         DateTime("2017-01-16"),
                                                         DateTime("2017-01-17"),
