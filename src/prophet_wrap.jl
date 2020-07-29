@@ -163,6 +163,14 @@ function parse_seasonality_args(m::Prophet, name, arg, auto_disable, default_ord
     m.pyProphet.parse_seasonality_args(name, arg, auto_disable, default_order)
 end
 
+function plot(m::Prophet, fcst, ax=nothing, uncertainty=true, plot_cap=true, xlabel="ds", ylabel="y", figsize=(10, 6))
+    m.pyProphet.plot(fcst, ax, uncertainty, plot_cap, xlabel, ylabel, figsize)
+end
+
+function plot_components(m::Prophet, fcst, uncertainty=true, plot_cap=true, weekly_start=0, yearly_start=0, figsize=nothing)
+    m.pyProphet.plot_components(fcst, uncertainty, plot_cap, weekly_start, yearly_start, figsize)
+end
+
 function predict(m::Prophet, df=nothing)
     m.pyProphet.predict(df)
 end

@@ -30,3 +30,6 @@ forecast = FBProphet.predict(m, future)
 
 @test all(index(Pandas.DataFrame(forecast.tail())) .== index(expected_forecast_df_tail))
 @test issubset(columns(expected_forecast_df_tail), columns(Pandas.DataFrame(forecast.tail())))
+
+@test_nowarn FBProphet.plot(m, forecast)
+@test_nowarn FBProphet.plot_components(m, forecast)
