@@ -6,9 +6,15 @@ export Prophet
 
 import Base:getproperty
 
-pyfbprophet = pyimport("fbprophet")
-site = pyimport("site")
-plt = pyimport("matplotlib.pyplot")
+const pyfbprophet = PyNULL()
+const site = PyNULL()
+const plt = PyNULL()
+
+function __init__()
+    copy!(pyfbprophet, pyimport("fbprophet"))
+    copy!(site, pyimport("site"))
+    copy!(plt, pyimport("matplotlib.pyplot"))
+end
 
 macro show()
     plt.show()
