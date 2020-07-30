@@ -1,3 +1,8 @@
 language: julia
 julia:
   - 1.4.1
+ branches:
+   only:
+   - master
+   - stg
+   - /^dev-ci*/
