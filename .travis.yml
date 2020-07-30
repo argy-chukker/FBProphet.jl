@@ -1,0 +1,17 @@
+language: julia
+codecov: true
+julia:
+  - 1.4.1
+branches:
+  only:
+  - master
+  - stg
+  - /dev-ci*/
+addons:
+  apt:
+    - python3
+    - python3-pip
+    - python3-setuptools
+before_install:
+  - python3 -m pip install --user --upgrade pip
+  - python3 -m pip install fbprophet
