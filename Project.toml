@@ -1,0 +1,7 @@
+name = "FBProphet"
+uuid = "14292a31-7164-42dc-9301-dc6c22c015d5"
+authors = ["korowjev <cristiansud@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
