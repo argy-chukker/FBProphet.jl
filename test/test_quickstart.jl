@@ -4,7 +4,7 @@ using Test
 
 include("data/quickstart_fixtures.jl")
 
-df = Pandas.read_csv("./test/data/example_wp_log_peyton_manning.csv")
+df = Pandas.read_csv(dirname(@__FILE__) * "/data/example_wp_log_peyton_manning.csv")
 m = FBProphet.Prophet()
 
 FBProphet.fit(m, df)
