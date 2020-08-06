@@ -44,7 +44,7 @@ On the other hand for argument passing, it is supported either of these three ty
  - Julia's wrapper `Pandas.DataFrame` type.
  - A pointer `PyObject` to a `pandas.DataFrame`
 
-```
+```julia
 using PyCall
 using Pandas
 
